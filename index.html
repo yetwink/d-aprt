@@ -1,0 +1,3023 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+  <meta lang="ru" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="MobileOptimized" content="320" />
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=0,shrink-to-fit=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+  <link rel="stylesheet" href="css/style.min.css" />
+  <title>Apartments</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./files/img/favicon/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./files/img/favicon/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="./files/img/favicon/favicon-16x16.png" />
+  <link rel="mask-icon" href="./files/img/favicon/safari-pinned-tab.svg" color="#fff" />
+  <link rel="shortcut icon" href="./files/img/favicon/favicon.ico" />
+  <meta name="apple-mobile-web-app-title" content="Apartments" />
+  <meta name="application-name" content="Apartments" />
+  <meta name="msapplication-TileColor" content="#1e1e1e" />
+  <meta name="project" content="apartments"/>
+  <meta name="is-disable-chat" content="false" />
+  
+  <meta name="theme-color" content="#000" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-touch-fullscreen" content="yes" />
+
+
+</head>
+
+
+  <body>
+
+    <div class="preloader">
+  <div class="preloader__circle progres">
+    <svg class="progres__ring progres__ring-anim progres__ring-desc" width="450" height="450" stroke="url(#paint0_linear_21909_2414)">
+      <circle class="progres__ring-circle" stroke-width="5" cx="225" cy="225" r="217" fill="transparent" />
+      <defs>
+        <linearGradient id="paint0_linear_21909_2414" x1="225" y1="0" x2="225" y2="450" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#282828" />
+          <stop offset="1" stop-color="#e4dcd3" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg class="progres__ring progres__ring-anim progres__ring-mobile" width="175" height="175" stroke="url(#paint)">
+      <circle class="progres__ring-circle" stroke-width="10" cx="87.5" cy="87.5" r="82" fill="transparent" />
+      <defs>
+        <linearGradient id="paint" x1="87.5" y1="0" x2="87.5" y2="175" gradientUnits="userSpaceOnUse">
+          <stop stop-color="#282828" />
+          <stop offset="1" stop-color="#e4dcd3" />
+        </linearGradient>
+      </defs>
+    </svg>
+    <svg class="progres__ring progres__ring-full progres__ring-desc" width="450" height="450" stroke="#fff">
+      <circle class="progres__ring-circle progres__ring-desc" stroke-width="1" cx="225" cy="225" r="220" fill="transparent" />
+    </svg>
+    <svg class="progres__ring progres__ring-full progres__ring-mobile" width="175" height="175" stroke="#fff">
+      <circle class="progres__ring-circle progres__ring-mobile" stroke-width="1" cx="87.5" cy="87.5" r="84" fill="transparent" />
+    </svg>
+  </div>
+  <div class="preloader__percent">
+    <p class="preloader__percent-num">0</p>
+    <p class="preloader__percent-sign">%</p>
+  </div>
+  <p class="preloader__text">Loading...</p>
+</div>
+
+    <header class="header">
+  <div class="header__container">
+
+
+    <div class="header__item header__logo">
+      <img data-img="./files/img/agency-logo.svg" alt="" />
+    </div>
+
+    <nav class="header__item header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item" data-link="intro">main</li>
+        <li class="header__nav-item" data-link="intro__anchor">introduction</li>
+        <li class="header__nav-item" data-link="header-location-anchor">featured locations</li>
+        <li class="header__nav-item" data-link="dubai__trigger">why choose dubai</li>
+        <li class="header__nav-item" data-link="header-testimonials-anchor">testimonials</li>
+        <li class="header__nav-item" data-link="header-contact-anchor">contact us</li>
+      </ul>
+    </nav>
+
+    <div class="header__item header__socials">
+      <div class="header__socials-tg">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+          <g clip-path="">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 0C5.373 0 0 5.373 0 12C0 18.627 5.373 24 12 24C18.627 24 24 18.627 24 12C24 5.373 18.627 0 12 0ZM17.562 8.161C17.382 10.058 16.6 14.663 16.203 16.788C16.035 17.688 15.703 17.989 15.383 18.018C14.686 18.082 14.157 17.557 13.482 17.115C12.426 16.423 11.829 15.992 10.804 15.316C9.619 14.535 10.387 14.106 11.062 13.405C11.239 13.221 14.309 10.428 14.369 10.175C14.376 10.143 14.384 10.025 14.313 9.963C14.242 9.901 14.139 9.922 14.065 9.939C13.959 9.963 12.272 11.078 9.003 13.284C8.524 13.613 8.09 13.773 7.701 13.765C7.273 13.756 6.449 13.523 5.836 13.323C5.085 13.079 4.487 12.949 4.539 12.535C4.566 12.319 4.863 12.098 5.431 11.872C8.929 10.348 11.262 9.343 12.429 8.857C15.762 7.471 16.454 7.23 16.906 7.222C17.472 7.214 17.608 7.681 17.562 8.161Z" fill="black"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_3350_9338">
+              <rect width="24" height="24" fill="white"/>
+            </clipPath>
+          </defs>
+        </svg>
+        <span>telegram</span>
+      </div>
+
+      <div class="header__socials-phone phone-replace-only" data-gtag-click="phone_call" onclick="ym(98002736,'reachGoal','phone number')">
+        <span>+971 56 XXX-XX-XX </span>&nbsp;
+        <span> show</span>
+      </div>
+
+    </div>
+
+    <div class="header__item header__menu">
+      <div class="header__mob-anim"></div>
+      <div class="header__menu-text">Menu</div>
+      <div class="header__menu-btn">
+        <div class="header__menu-btn-line"></div>
+        <div class="header__menu-btn-line"></div>
+        <div class="header__menu-btn-line"></div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bg"></div>
+
+  <div class="header__mob">
+    <nav class="header__mob-nav">
+      <ul class="header__mob-nav-list">
+        <li data-link="intro">main</li>
+        <li data-link="intro__anchor">introduction</li>
+        <li data-link="header-location-anchor">locations</li>
+        <li data-link="dubai__trigger">why dubai</li>
+        <li data-link="header-testimonials-anchor">testimonials</li>
+        <li data-link="header-contact-anchor">contact us</li>
+      </ul>
+    </nav>
+    <div class="header__mob-bot">
+      <p class="header__mob-bot-title">Get Consultation</p>
+      <form class="form header__form @@theme" data-gtag-submit="" onsubmit="ym(98002736,'reachGoal','form')">
+  <div class="header__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="header__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="header__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">confirm</span>
+    <span class="buttons__hide">confirm</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+    </div>
+    <ul class="footer__item footer__socials">
+      <li class="footer__socials-link footer__socials-tg">
+        <a href="#" class="event_tg" data-gtag-click="" onclick="ym(98002736,'reachGoal','telegram')">
+          <div class="footer__socials-icon">
+            <img data-img="./files/img/icons/ftg.svg" alt="" />
+          </div>
+          <span>TELEGRAM</span>
+        </a>
+      </li>
+      <li class="footer__socials-link footer__socials-wp">
+        <a href="#" class="event_wp" data-gtag-click="" onclick="ym(98002736,'reachGoal','whatsapp')">
+          <div class="footer__socials-icon">
+            <img data-img="./files/img/icons/fwp.svg" alt="" />
+          </div>
+          <span>WHATSAPP</span>
+        </a>
+      </li>
+      <li class="footer__socials-link footer__socials-phone">
+        <a class="event_call" data-gtag-click="phone_call" onclick="ym(98002736,'reachGoal','phone number')">
+
+          <div class="footer__socials-icon">
+            <img data-img="./files/img/icons/fp.svg" alt="" />
+          </div>
+        </a>
+        
+      </li>
+    </ul>
+  </div>
+</header>
+    <main class="main">
+      <section class="intro">
+  <div class="intro__anchor"></div>
+  <div class="intro__container">
+    <div class="intro__main">
+      <div class="intro__main-wrapper">
+        <h1 class="intro__title">Premium apartments</h1>
+        <p class="intro__text">
+          Apartments in Dubai provide an exclusive lifestyle with features such as breathtaking views, 24/7 security,
+          and various leisure facilities. These properties are appealing to both investors and residents due to their
+          strong rental yields and potential for capital growth.
+        </p>
+        <p class="intro__text-mobile">
+          Villas in Dubai offer unparalleled luxury, convenience, and investment
+          potential. With flexible payment plans and Golden Visa opportunities,
+          now is the ideal time to explore Dubai's villa market.
+        </p>
+        
+      </div>
+      <div class="intro__main-bot">
+        <p class="intro__form-title">Get Expert Consultation</p>
+        <p class="intro__form-title mobile">Get Consultation</p>
+        <form class="form intro__form dark" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="intro__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="intro__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="intro__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Confirm</span>
+    <span class="buttons__hide">Confirm</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+      </div>
+    </div>
+    <div class="intro__bg">
+      
+      <picture>
+        <img srcset="./img/intro/intro-bg-4k.webp, ./img/intro/intro-bg-mob.webp 768w" alt="" />
+      </picture>
+
+    </div>
+    <div class="intro__bot">
+      <p class="intro__bot-title">
+        Uncover your <br />
+        ideal residence
+      </p>
+      <p class="intro__bot-title mobile"> Uncover your ideal residence</p>
+      <div class="intro__bot-list">
+
+        <div class="intro__bot-item intro__item">
+
+          <p class="intro__item-top-text">
+            Discover your dream home, from chic studios to expansive 3-bedroom <br /> apartments
+          </p>
+          <p class="intro__item-price-text">
+            Starting Price
+          </p>
+          <p class="intro__item-price-title">
+            $150K
+          </p>
+          <p class="intro__item-bot-text">
+            Experience the epitome of luxury with an exclusive range of properties nestled in Dubai's vibrant
+            neighborhoods.Enjoy tax-free living, lucrative investment potential, and the chance to secure an Investor
+            Visa.
+          </p>
+
+        </div>
+
+      </div>
+      <button class="buttons intro__bot-btn" type="button" id="wpPopupBtn">
+        <div class="buttons__icon">
+          <img data-img="./files/img/icons/arrow.svg" alt="" />
+        </div>
+        <span class="buttons__val">Book a Visit</span>
+        <span class="buttons__hide">Book a Visit</span>
+      </button>
+    </div>
+  </div>
+</section> 
+   
+      <section class="villas header-location-anchor">
+  <div class="villas__inner">
+    <p class="villas__title-new">
+      featured location
+    </p>
+    <div class="villas__head">
+      <div class="villas__head-content">
+        <h2 class="villas__title">Choices</h2>
+        <p class="villas__desc descs">
+          Discover our range of villa options to suit your needs. Choose from
+          off-plan villas for customization and the latest designs, with
+          flexible payment plans and potential savings.
+          <span>Select ready villas for immediate move-in, located in established
+            communities with all amenities in place. We have the perfect choice
+            for you.</span>
+        </p>
+      </div>
+    </div>
+    <div class="villas__cards swiper">
+      <div class="villas__cards-wrap swiper-wrapper">
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Downtown Dubai</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/1.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 400 to 10 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$200K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Business Bay</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/2.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 5 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 450 to 5 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$180K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Al Jaddaf</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/3.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 400 to 8 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$150K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Dubai Hills</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/4.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 400 to 9 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$200K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Creek Harbour</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  10-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/5.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 5 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 650 to 7 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$270K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Maritime City</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  10-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/6.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 400 to 8 000q. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$180K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Meydan</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  10-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/7.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 450 to 9 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$200K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Motor City</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-10%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/8.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 6 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 450 to 4 500 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$500K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Damac Hills</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  5-10%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/9.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 8 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 400 to 6 500 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$170K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+        <div class="villas__cards-item swiper-slide">
+          <div class="villas__cards-head">
+            <div class="villas__cards-head-right">
+              <h3 class="villas__cards-title">Palm Jumeirah</h3>
+              <div class="villas__cards-head-righ-box">
+                <div class="villas__cards-head-righ-text">
+                  Down payment
+                </div>
+                <div class="villas__cards-head-righ-title">
+                  10-20%
+                </div>
+              </div>
+            </div>
+            <div class="villas__cards-img">
+              <img data-img="./files/img/villas/10.webp" alt="" />
+            </div>
+            <div class="villas__cards-loc">
+              <p class="villas__cards-loc-name popup-lc__btn">
+                <img data-img="./files/img/icons/location.svg" alt="" />
+                MBR City
+              </p>
+            </div>
+          </div>
+          <ul class="villas__list">
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Unit type:</div>
+              <p class="villas__list-val">1 - 7 Bedroom Apartments</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold">Size:</div>
+              <p class="villas__list-val">from 450 to 10 000 sq. ft.</p>
+            </li>
+            <li class="villas__list-item">
+              <div class="villas__list-bold desc">Starting price:</div>
+              <div class="villas__list-bold mob">Price:</div>
+              <p class="villas__list-val">$270K</p>
+            </li>
+          </ul>
+          <button class="villas__cards-btn popup-lc__btn buttons" type="button" id="">
+            <div class="buttons__icon">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+            <span class="buttons__val">Enquire</span>
+            <span class="buttons__hide">Enquire</span>
+            <div class="buttons__icon-right">
+              <img data-img="./files/img/icons/arrow.svg" alt="" />
+            </div>
+          </button>
+        </div>
+
+  
+      </div>
+      <div class="swiper-scrollbar villas__cards-scrollbar"></div>
+    </div>
+    <div class="villas__cards-controler">
+      <div class="villas__cards-next swiper-button-next">
+        <img src="./files/img/icons/arrow-dark.svg" alt="" />
+      </div>
+      <div class="villas__cards-prev swiper-button-prev">
+        <img src="./files/img/icons/arrow-dark.svg" alt="" />
+      </div>
+      <div class="swiper-pagination villas__cards-pagination"></div>
+    </div>
+  </div>
+  
+</section>
+      <section class="dubai">
+    <div class="dubai__wrapper">
+
+        <div class="dubai__trigger"></div>
+        <div class="header-dubai-anchor"></div>
+        <div class="dubai__bg">
+            
+            <picture>
+                <img srcset="./files/img/dubai/dubai-bg-4k.webp, ./files/img/dubai/dubai-bg.webp 768w" alt="" />
+            </picture>
+        </div>
+        <div class="container">
+            <h2 class="dubai__title">why choose dubai?</h2>
+            <div class="dubai__cards-wrapper">
+    
+                <div class="dubai__cards">
+                    <div class="dubai__card mob-active">
+                        <div class="dubai__card-num">1</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/payment-1.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">Flexible payment plans</div>
+                        <div class="dubai__card-desc">Invest with confidence with tailored payment plans that accommodate
+                            your financial pace without compromising on quality.
+                        </div>
+                    </div>
+                    <div class="dubai__card">
+                        <div class="dubai__card-num">2</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/freehold-2.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">Freehold ownership</div>
+                        <div class="dubai__card-desc">Secure a lifetime property with freehold ownership, offering you complete control over your investment.
+                        </div>
+                    </div>
+                    <div class="dubai__card">
+                        <div class="dubai__card-num">3</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/tax-3.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">Tax-Free</div>
+                        <div class="dubai__card-desc">Enjoy the financial benefits of tax-free living, enhancing your investment 
+                            returns and personal savings.
+                        </div>
+                    </div>
+                    <div class="dubai__card">
+                        <div class="dubai__card-num">4</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/capital-4.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">Capital appreciation</div>
+                        <div class="dubai__card-desc">Unlock the potential for a remarkable 30% capital appreciation within just one year. 
+                        </div>
+                    </div>
+                    <div class="dubai__card">
+                        <div class="dubai__card-num">5</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/investment-5.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">High returns</div>
+                        <div class="dubai__card-desc">Experience impressive returns of up to 9% on your investment, maximizing your financial growth potential.
+                        </div>
+                    </div>
+                    <div class="dubai__card">
+                        <div class="dubai__card-num">6</div>
+                        <div class="dubai__card-icon">
+                            <img src="./files/img/dubai/document-6.svg" alt="">
+                        </div>
+                        <div class="dubai__card-mob-arrow">
+                            <img src="./files/img/icons/arrow-dark.svg" alt="">
+                        </div>
+                        <div class="dubai__card-title">Effortless buying experience</div>
+                        <div class="dubai__card-desc">Our expert team will guide you through 
+                            a seamless buying process, from selecting 
+                            your ideal home to the final paperwork. 
+                        </div>
+                    </div>
+    
+    
+                </div>
+    
+            </div>
+            <button class="villas__cards-btn buttons" type="button" id="popupDb">
+                <div class="buttons__icon">
+                    <img data-img="./files/img/icons/arrow-dark.svg" alt="" />
+                </div>
+                <span class="buttons__val">Enquire</span>
+                <span class="buttons__hide">Enquire</span>
+                <div class="buttons__icon-right">
+                    <img data-img="./files/img/icons/arrow-dark.svg" alt="" />
+                </div>
+            </button>
+        </div>
+    </div>
+
+</section>
+      <section class="feedback header-testimonials-anchor">
+  <div class="feedback-wrapper">
+    <h1 class="feedback__title">Testimonials</h1>
+    <div class="feedback-container">
+      <div class="feedback-swiper swiper">
+        <div class="feedback-swiper-wrapper swiper-wrapper">
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Leonid Petrov</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">3 month ago</p>
+              </div>
+              <h2 class="feedback-main__title">Perfect Urban Oasis</h2>
+              <p class="feedback-main__text" data-simplebar>The apartment I purchased in Dubai is the epitome of luxury.
+                Located in the prestigious Palm Jumeirah, it offers breathtaking views of the Arabian Gulf. The property
+                includes expansive living areas, a chef’s kitchen with premium appliances, and an outdoor terrace with a
+                private hot tub. The building features a state-of-the-art fitness center, a world-class restaurant, and
+                valet parking. The professional handling of the purchase made it an excellent experience.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Aarav Patel</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">3 month ago</p>
+              </div>
+              <h2 class="feedback-main__title">Seamless and Stunning</h2>
+              <p class="feedback-main__text" data-simplebar>My experience buying an apartment in Dubai was fantastic.
+                The whole process was smooth and hassle-free. The apartment itself is beautiful, modern, and spacious
+                with all the features I wanted.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Nikita Vastrecov</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">1 month ago</p>
+              </div>
+              <h2 class="feedback-main__title">Very nice apartment I ever bought</h2>
+              <p class="feedback-main__text" data-simplebar>I’m thrilled with my new home in Dubai, located in the
+                vibrant Business Bay area. The apartment is designed with contemporary elegance, featuring an open-plan
+                layout, high-quality finishes, and a large balcony. The building’s amenities are impressive, including
+                an outdoor pool with cabanas, a modern co-working space, and a gourmet deli. The whole buying process
+                was transparent and well-coordinated.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Mei Ling</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/half_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Exceptional Quality</h2>
+              <p class="feedback-main__text" data-simplebar>Purchasing an apartment in Dubai has been a fantastic
+                experience. Positioned in the upscale Dubai Hills Estate, it offers serene views of the golf course. The
+                building includes a rooftop lounge, an expansive gym, and a children’s splash pool. The team’s
+                professionalism and attention to detail ensured a smooth and enjoyable purchase.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">David Robinson</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Dream Location</h2>
+              <p class="feedback-main__text" data-simplebar>I recently bought an apartment in Dubai and couldn’t be more
+                satisfied. The attention to detail and the quality of the apartment are remarkable. The team was very
+                professional and made the entire process easy and enjoyable. The amenities are first-class, and I feel
+                like I’m living in a five-star hotel!
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Michael Davis</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/half_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Modern, Comfort, and Elegance</h2>
+              <p class="feedback-main__text" data-simplebar>The process of buying my new apartment in Dubai was seamless
+                from start to finish. The apartment itself is fantastic.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Priya Sharma</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Stress-Free Location</h2>
+              <p class="feedback-main__text" data-simplebar>My new apartment in Dubai is everything I hoped for and
+                more. The building is luxurious, the amenities are top-notch, including a state-of-the-art gym, a
+                stunning infinity pool, and 24/7 concierge service. The location is unbeatable. The entire purchase
+                process was handled with professionalism and efficiency. I highly recommend this company to anyone
+                looking for high-end living in Dubai!
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Jackie Nguyen</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Sophisticated and Stylish</h2>
+              <p class="feedback-main__text" data-simplebar>Buying an apartment in Dubai has been a fantastic
+                investment. The property is beautifully designed, with all the modern amenities you could want. I’m
+                thrilled with my decision and the quality of my new home!
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Ella Martin</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Unmatched Quality</h2>
+              <p class="feedback-main__text" data-simplebar>Buying an apartment in Dubai was an excellent decision. The
+                property is in a prime location near Dubai Marina, with easy access to the beach and shopping malls. The
+                unit boasts a large balcony with stunning marina views, a gourmet kitchen with top-of-the-line
+                appliances, and smart home features. The building’s amenities include a climate-controlled pool, a
+                dedicated kids' play area, and 24-hour security. The whole process was efficient and well-managed.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Kiran Patel</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/half_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Unrivaled Luxury</h2>
+              <p class="feedback-main__text" data-simplebar>My apartment in Dubai Creek Harbor offers breathtaking
+                skyline views and luxurious finishes. The building features a sky lounge, Olympic-sized pool, and a
+                modern fitness center, making the whole buying process seamless and rewarding.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="../img/feedback/avatar_1.svg" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Suki Wong</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/half_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Superior Comfort and Amenities</h2>
+              <p class="feedback-main__text" data-simplebar>Situated in the trendy Jumeirah Beach Residence area, it
+                offers direct beach access and incredible sea views. The unit features custom-designed furniture, a
+                luxurious master suite with a walk-in closet, and a high-tech home automation system. The building
+                includes a private beach club, a high-end spa, and an exclusive residents' lounge.
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+          <div class="feedback-swiper-slide swiper-slide">
+            <div class="feedback-header">
+              <div class="feedback-header__avatar">
+                <span class="feedback-header__initial">L</span>
+                <img src="" alt="">
+              </div>
+              <div class="feedback-header-user__wrapper">
+                <h3 class="feedback-header-user__name">Liam O’Connor</h3>
+                <h5 class="feedback-header-user__location">Dubai, Arab Emirates</h5>
+              </div>
+            </div>
+            <div class="feedback-main">
+              <div class="feedback-main-info__wrapper">
+                <div class="feedback-main-info__score">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                  <img src="../img/feedback/full_star.svg" alt="">
+                </div>
+                <p class="feedback-main-info__time">2 days ago</p>
+              </div>
+              <h2 class="feedback-main__title">Exquisite Living</h2>
+              <p class="feedback-main__text" data-simplebar>I couldn’t be happier with my new apartment in Dubai! The
+                location is perfect, right in the heart of the city with breathtaking views of the skyline. The customer
+                service was also outstanding – they guided me through every step of the process with ease. Highly
+                recommend!
+              </p>
+            </div>
+            <div class="feedback-footer">
+              <h4 class="feedback-footer__subtitle">Reviews</h4>
+              <div class="feedback-footer__subtitle mob-wrapper">
+                <h4 class="feedback-footer__subtitle mob-open">Read more</h4>
+                <h4 class="feedback-footer__subtitle mob-close">Hide</h4>
+              </div>
+              <div class="feedback-footer__platform-logo">
+                <img src="../img/feedback/google.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feedback-swiper-button-prev">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <g clip-path="url(#clip0_907_11674)">
+            <path
+              d="M48 24C48 19.2532 46.5924 14.6131 43.9553 10.6663C41.3181 6.71953 37.5698 3.64339 33.1844 1.82689C28.799 0.0103896 23.9734 -0.464892 19.3178 0.461152C14.6623 1.3872 10.3859 3.67297 7.02944 7.02943C3.67298 10.3859 1.3872 14.6623 0.461157 19.3178C-0.464887 23.9734 0.0103929 28.799 1.82689 33.1844C3.6434 37.5698 6.71953 41.3181 10.6663 43.9553C14.6131 46.5924 19.2532 48 24 48C30.3631 47.9931 36.4636 45.4623 40.963 40.963C45.4623 36.4636 47.9931 30.3631 48 24ZM16 24C15.9985 22.536 16.5336 21.1222 17.504 20.026C18.086 19.372 18.652 18.752 19.058 18.346L24.706 12.6C24.8868 12.4003 25.1062 12.2391 25.3509 12.1263C25.5955 12.0134 25.8605 11.9511 26.1298 11.9432C26.3991 11.9353 26.6673 11.9819 26.9182 12.0802C27.169 12.1785 27.3975 12.3264 27.5897 12.5152C27.782 12.704 27.9341 12.9296 28.037 13.1787C28.1399 13.4277 28.1914 13.6949 28.1885 13.9644C28.1855 14.2338 28.1281 14.4998 28.0198 14.7465C27.9115 14.9932 27.7544 15.2155 27.558 15.4L21.9 21.16C21.526 21.536 21.018 22.096 20.5 22.678C20.1777 23.0434 19.9999 23.5138 19.9999 24.001C19.9999 24.4882 20.1777 24.9586 20.5 25.324C21.016 25.904 21.524 26.464 21.886 26.828L27.558 32.6C27.7544 32.7845 27.9115 33.0068 28.0198 33.2535C28.1281 33.5002 28.1855 33.7662 28.1885 34.0356C28.1914 34.3051 28.1399 34.5723 28.037 34.8213C27.9341 35.0704 27.782 35.296 27.5897 35.4848C27.3975 35.6736 27.169 35.8215 26.9182 35.9198C26.6673 36.0181 26.3991 36.0647 26.1298 36.0568C25.8605 36.0489 25.5955 35.9866 25.3509 35.8737C25.1062 35.7609 24.8868 35.5997 24.706 35.4L19.048 29.642C18.648 29.242 18.088 28.628 17.51 27.976C16.5365 26.8805 15.9991 25.4656 16 24Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_907_11674">
+              <rect width="48" height="48" fill="white" transform="translate(48 48) rotate(-180)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+      <div class="feedback-swiper-button-next">
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+          <g clip-path="url(#clip0_907_11672)">
+            <path
+              d="M0 24C0 28.7468 1.40758 33.3869 4.04473 37.3337C6.68188 41.2805 10.4302 44.3566 14.8156 46.1731C19.201 47.9896 24.0266 48.4649 28.6822 47.5388C33.3377 46.6128 37.6141 44.327 40.9706 40.9706C44.327 37.6141 46.6128 33.3377 47.5388 28.6822C48.4649 24.0266 47.9896 19.201 46.1731 14.8156C44.3566 10.4302 41.2805 6.68188 37.3337 4.04473C33.3869 1.40758 28.7468 0 24 0C17.6369 0.00688216 11.5364 2.53766 7.03704 7.03704C2.53766 11.5364 0.00688216 17.6369 0 24ZM32 24C32.0015 25.464 31.4664 26.8778 30.496 27.974C29.914 28.628 29.348 29.248 28.942 29.654L23.294 35.4C23.1132 35.5997 22.8938 35.7609 22.6491 35.8737C22.4045 35.9866 22.1395 36.0489 21.8702 36.0568C21.6009 36.0647 21.3327 36.0181 21.0818 35.9198C20.831 35.8215 20.6025 35.6736 20.4103 35.4848C20.218 35.296 20.0659 35.0704 19.963 34.8213C19.8601 34.5723 19.8086 34.3051 19.8115 34.0356C19.8145 33.7662 19.8719 33.5002 19.9802 33.2535C20.0886 33.0068 20.2456 32.7845 20.442 32.6L26.1 26.84C26.474 26.464 26.982 25.904 27.5 25.322C27.8223 24.9566 28.0001 24.4862 28.0001 23.999C28.0001 23.5118 27.8223 23.0414 27.5 22.676C26.984 22.096 26.476 21.536 26.114 21.172L20.442 15.4C20.2456 15.2155 20.0886 14.9932 19.9802 14.7465C19.8719 14.4998 19.8145 14.2338 19.8115 13.9644C19.8086 13.6949 19.8601 13.4277 19.963 13.1787C20.0659 12.9296 20.218 12.704 20.4103 12.5152C20.6025 12.3264 20.831 12.1785 21.0818 12.0802C21.3327 11.9819 21.6009 11.9353 21.8702 11.9432C22.1395 11.9511 22.4045 12.0134 22.6491 12.1263C22.8938 12.2391 23.1132 12.4003 23.294 12.6L28.952 18.358C29.352 18.758 29.912 19.372 30.49 20.024C31.4636 21.1195 32.0009 22.5344 32 24Z"
+              fill="black" />
+          </g>
+          <defs>
+            <clipPath id="clip0_907_11672">
+              <rect width="48" height="48" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+    <div class="feedback-bottom">
+      <p class="feedback-bottom__text">
+        View our exclusive listings and claim your spot<br>in Dubai’s most desirable addresses today!
+      </p>
+      <p class="feedback-bottom__text mob">
+        Explore our exclusive Dubai listings today!
+      </p>
+      <button class="villas__cards-btn buttons" type="button" id="popupBtn">
+        <div class="buttons__icon">
+          <img data-img="./files/img/icons/arrow-dark.svg" alt="" />
+        </div>
+        <span class="buttons__val">LEARN MORE</span>
+        <span class="buttons__hide">LEARN MORE</span>
+        <div class="buttons__icon-right">
+          <img data-img="./files/img/icons/arrow-dark.svg" alt="" />
+        </div>
+      </button>
+    </div>
+  </div>
+</section>
+      <section class="agency header-contact-anchor">
+  <div class="agency__inner container">
+
+    <div class="agency__box">
+
+      <div class="agency__left">
+
+        <div class="agency__left-top">
+
+          <div class="agency__left-logo">
+            <img src="./files/img/agency/ag-logo.svg" alt="">
+          </div>
+          <p class="agency__left-text">
+            AX HOLDING is a promising name in the UAE real estate market, a group of companies under the umbrella brand,
+            AX, which covers all the needs of commercial and private property investors.
+          </p>
+          <p class="agency__left-text-light">
+            Our team is made up of experts from over 40 nationalities, speaking 30 languages. This diversity allows us to
+            communicate with clients, understand their needs, and respond to requests. With over 500 real estate
+            professionals, we are dedicated to continuously improving our skills.
+          </p>
+
+        </div>
+
+        <div class="agency__mob">
+          <div class="swiper swiper-agency">
+            <div class="swiper-wrapper">
+          
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/01.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/02.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/03.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/04.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/05.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/06.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/07.jpg" alt="">
+                </div>
+              </div>
+  
+              <div class="swiper-slide">
+                <div class="agency__mob-img">
+                  <img class="agency__images-4" src="./files/img/agency/mob/08.jpg" alt="">
+                </div>
+              </div>
+             
+            </div>
+          
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+  
+          </div>
+        </div>
+  
+        <div class="agency__left-bottom">
+
+          <div class="agency__left-item">
+            <p class="agency__left-item-text desc">
+              Offers in the Database
+            </p>
+            <p class="agency__left-item-text mob">
+              Offers
+            </p>
+            <p class="agency__left-item-title">
+              5000+
+            </p>
+          </div>
+
+          <div class="agency__left-item">
+            <p class="agency__left-item-text">
+              Specialists
+            </p>
+            <p class="agency__left-item-title">
+              500+
+            </p>
+          </div>
+
+          <div class="agency__left-item">
+            <p class="agency__left-item-text">
+              Languages
+            </p>
+            <p class="agency__left-item-title">
+              30+
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+      <div class="agency__images">
+
+        <div class="agency__images-left">
+
+          <div class="agency__images-left-top">
+
+            <div class="agency__images-left-first">
+              <img src="./files/img/agency/11.jpg" alt="">
+              <img src="./files/img/agency/22.jpg" alt="">
+            </div>
+            <img class="agency__images-3" src="./files/img/agency/33.jpg" alt="">
+            <img class="agency__images-4" src="./files/img/agency/44.jpg" alt="">
+
+          </div>
+
+          <div class="agency__images-left-bot">
+            <img class="agency__images-5" src="./files/img/agency/55.jpg" alt="">
+            <img class="agency__images-6" src="./files/img/agency/66.jpg" alt="">
+          </div>
+
+        </div>
+
+        <div class="agency__images-right">
+          <img class="agency__images-7" src="./files/img/agency/77.jpg" alt="">
+          <img class="agency__images-8" src="./files/img/agency/88.jpg" alt="">
+        </div>
+
+      </div>
+
+    
+
+    </div>
+
+    <div class="agency__bot">
+      <p class="agency__bot-title desc">Get Expert Consultation</p>
+      <p class="agency__bot-title mob">Get Consultation</p>
+      <form class="form agency__form @@theme" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="agency__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="agency__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="agency__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">confirm</span>
+    <span class="buttons__hide">confirm</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+    </div>
+  </div>
+</section>
+
+    </main>
+    <footer class="footer">
+  <div class="footer__container">
+    <ul class="footer__item footer__list">
+      <li class="footer__link" data-link="intro">home</li>
+      <li class="footer__link" data-link="intro__anchor">Introduction</li>
+      <li class="footer__link" data-link="header-location-anchor">Featured locations</li>
+      <li class="footer__link" data-link="dubai__trigger">Why choose Dubai</li>
+      <li class="footer__link" data-link="header-testimonials-anchor">TEstimonials</li>
+      <li class="footer__link" data-link="header-contact-anchor">Contact us</li>
+    </ul>
+    <ul class="footer__item footer__socials">
+      <li class="footer__socials-link footer__socials-tg">
+        <a href="#" class="event_tg" data-gtag-click="" onclick="ym(11111111,'reachGoal','telegram')">
+          <div class="footer__socials-icon">
+            <picture>
+
+              <img srcset="./files/img/icons/ftg.svg, ./files/img/icons/tg-icon-dark.svg 768w" alt="" />
+            </picture>
+          </div>
+          <span>TELEGRAM</span>
+        </a>
+      </li>
+      <li class="footer__socials-link footer__socials-wp">
+        <a href="#" class="event_wp" data-gtag-click="" onclick="ym(11111111,'reachGoal','whatsapp')">
+          <div class="footer__socials-icon">
+            <picture>
+
+              <img srcset="./files/img/icons/fwp.svg, ./files/img/icons/wp-icon-dark.svg 768w" alt="" />
+            </picture>
+          </div>
+          <span>WHATSAPP</span>
+        </a>
+      </li>
+      <li class="footer__socials-link footer__socials-phone">
+        <a href="#" class="event_call" data-gtag-click="" onclick="ym(11111111,'reachGoal','phone number')">
+          <div class="footer__socials-icon">
+              <picture>
+                <img srcset="./files/img/icons/fp.svg, ./files/img/icons/call-icon-dark.svg 768w" alt="" />
+              </picture>
+          </div>
+          <div class="footer__socials-phone phone-replace-only">
+            <span>+971 56 XXX-XX-XX </span>&nbsp;
+            <span>show</span>
+          </div>
+        </a>
+      </li>
+    </ul>
+    <div class="footer__item">
+      <div class="footer__text">All rights reserved.<sup>&#169;</sup></div>
+    </div>
+  </div>
+</footer>
+
+    <div class="wp-popup">
+  <div class="wp-popup__wrapper">
+    <div class="wp-popup__top">
+      <div class="wp-popup__avatars-list">
+        <div class="wp-popup__avatars-item">
+          <img data-img="./img/popup/1.webp" alt="" />
+          <span class="wp-popup__online">
+            <svg xmlns="http://www.w3.org/2000/svg" width="31" height="32" viewBox="0 0 31 32" fill="none">
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M15.4754 28.7946C22.5984 28.7946 28.3727 23.0203 28.3727 15.8973C28.3727 8.77432 22.5984 3 15.4754 3C8.35244 3 2.57812 8.77432 2.57812 15.8973C2.57812 23.0203 8.35244 28.7946 15.4754 28.7946Z"
+                fill="#53C22B"
+                stroke="#EDEDED"
+                stroke-width="4.48944"
+              />
+            </svg>
+          </span>
+        </div>
+        <div class="wp-popup__avatars-item">
+          <img data-img="./img/popup/2.webp" alt="" />
+        </div>
+        <div class="wp-popup__avatars-item">
+          <img data-img="./img/popup/3.webp" alt="" />
+        </div>
+      </div>
+      <div class="wp-popup__info">
+        <p class="wp-popup__info-online">Online Now</p>
+        <p class="wp-popup__info-job">Sales Manager</p>
+      </div>
+    </div>
+    <p class="wp-popup__connect">Connect with us</p>
+    <p class="wp-popup__text">Get expert support from <br> our team of specialists</p>
+
+    <form class="form wp-popup__form extended" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="wp-popup__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="wp-popup__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="wp-popup__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Get in Touch</span>
+    <span class="buttons__hide">Get in Touch</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+
+    <div class="wp-popup__exit">
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" viewBox="0 0 23 23" fill="none">
+        <line x1="1.35355" y1="0.859703" x2="22.5668" y2="22.0729" stroke="black" />
+        <line x1="0.646447" y1="21.8597" x2="21.8596" y2="0.6465" stroke="black" />
+      </svg>
+    </div>
+  </div>
+</div>
+
+    <div class="popup-tp timepopup">
+  <div class="popup-tp__wrapper">
+    <div class="popup-tp__bg">
+      <img data-img="./img/popup/popup-time.webp" alt="" />
+    </div>
+    <div class="popup-tp__info">
+      <p class="popup-tp__title">
+        All Information
+in one CLICK
+      </p>
+      <p class="popup-tp__text">
+        Contact our experts to get detailed information about the the range of  luxurious apartments
+      </p>
+      <form class="form popup-tp__form @@theme" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Download</span>
+    <span class="buttons__hide">Download</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+
+      <div class="popup-tp__exit timepopup__close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          viewBox="0 0 23 23"
+          fill="none"
+        >
+          <line
+            x1="1.35355"
+            y1="0.859703"
+            x2="22.5668"
+            y2="22.0729"
+            stroke="black"
+          />
+          <line
+            x1="0.646447"
+            y1="21.8597"
+            x2="21.8596"
+            y2="0.6465"
+            stroke="black"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-tp popup-lc">
+  <div class="popup-tp__wrapper">
+    <div class="popup-tp__bg">
+      <img data-img="./img/popup/popup-vilas.webp" alt="" />
+    </div>
+    <div class="popup-tp__info">
+      <p class="popup-tp__title">
+        Premier Living Awaits You
+      </p>
+      <p class="popup-tp__text">
+        Contact our experts for details on luxurious apartments in Dubai's prestigious districts
+      </p>
+      <form class="form popup-tp__form @@theme" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Download</span>
+    <span class="buttons__hide">Download</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+      <div class="popup-tp__exit popup-lc__close">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          viewBox="0 0 23 23"
+          fill="none"
+        >
+          <line
+            x1="1.35355"
+            y1="0.859703"
+            x2="22.5668"
+            y2="22.0729"
+            stroke="black"
+          />
+          <line
+            x1="0.646447"
+            y1="21.8597"
+            x2="21.8596"
+            y2="0.6465"
+            stroke="black"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-tp popup-db">
+  <div class="popup-tp__wrapper popup-db__wrapper">
+    <div class="popup-tp__bg">
+      <img data-img="./img/popup/popup-db.webp" alt="" />
+    </div>
+    <div class="popup-tp__info">
+      <p class="popup-tp__title">
+        All Information <br />
+        in one CLICK
+      </p>
+      <p class="popup-tp__text">
+        Contact our experts to get detailed information about the the range of  luxurious apartments
+      </p>
+      <form class="form popup-tp__form @@theme" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Download</span>
+    <span class="buttons__hide">Download</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+
+      <div class="popup-tp__exit popup__close popup-db__exit">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          viewBox="0 0 23 23"
+          fill="none"
+        >
+          <line
+            x1="1.35355"
+            y1="0.859703"
+            x2="22.5668"
+            y2="22.0729"
+            stroke="black"
+          />
+          <line
+            x1="0.646447"
+            y1="21.8597"
+            x2="21.8596"
+            y2="0.6465"
+            stroke="black"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-tp popup">
+  <div class="popup-tp__wrapper">
+    <div class="popup-tp__bg">
+      <img data-img="./img/popup/popup-test.webp" alt="" />
+    </div>
+    <div class="popup-tp__info">
+      <p class="popup-tp__title">
+        All Information <br />
+        in one CLICK
+      </p>
+      <p class="popup-tp__text">
+        Contact our experts to get detailed information about the the range of  luxurious apartments
+      </p>
+      <form class="form popup-tp__form @@theme" data-gtag-submit="" onsubmit="ym(11111111,'reachGoal','form')">
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="text"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M9.99479 9.9974C12.296 9.9974 14.1615 8.13192 14.1615 5.83073C14.1615 3.52954 12.296 1.66406 9.99479 1.66406C7.69361 1.66406 5.82812 3.52954 5.82812 5.83073C5.82812 8.13192 7.69361 9.9974 9.99479 9.9974Z"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M17.1604 18.3372C17.1604 15.1122 13.9521 12.5039 10.0021 12.5039C6.05208 12.5039 2.84375 15.1122 2.84375 18.3372"
+            stroke="black"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="email"
+      name="email"
+      placeholder="Your e-mail"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M14.1641 17.0885H5.83073C3.33073 17.0885 1.66406 15.8385 1.66406 12.9219V7.08854C1.66406 4.17188 3.33073 2.92188 5.83073 2.92188H14.1641C16.6641 2.92188 18.3307 4.17188 18.3307 7.08854V12.9219C18.3307 15.8385 16.6641 17.0885 14.1641 17.0885Z"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+          <path
+            d="M14.1615 7.5L11.5531 9.58333C10.6948 10.2667 9.28645 10.2667 8.42812 9.58333L5.82812 7.5"
+            stroke="black"
+            stroke-miterlimit="10"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  <div class="popup-tp__form-wrap form__wrap">
+    <input
+      class="form__input"
+      type="tel"
+      name="phone"
+      placeholder="Phone number"
+      required
+    />
+    <span class="form-icons input-icon">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 20 20"
+        fill="none"
+      >
+        <g opacity="0.6">
+          <path
+            d="M18.3057 15.2724C18.3057 15.5724 18.2391 15.8807 18.0974 16.1807C17.9557 16.4807 17.7724 16.7641 17.5307 17.0307C17.1224 17.4807 16.6724 17.8057 16.1641 18.0141C15.6641 18.2224 15.1224 18.3307 14.5391 18.3307C13.6891 18.3307 12.7807 18.1307 11.8224 17.7224C10.8641 17.3141 9.90573 16.7641 8.95573 16.0724C7.9974 15.3724 7.08906 14.5974 6.2224 13.7391C5.36406 12.8724 4.58906 11.9641 3.8974 11.0141C3.21406 10.0641 2.66406 9.11406 2.26406 8.1724C1.86406 7.2224 1.66406 6.31406 1.66406 5.4474C1.66406 4.88073 1.76406 4.33906 1.96406 3.83906C2.16406 3.33073 2.48073 2.86406 2.9224 2.4474C3.45573 1.9224 4.03906 1.66406 4.65573 1.66406C4.88906 1.66406 5.1224 1.71406 5.33073 1.81406C5.5474 1.91406 5.73906 2.06406 5.88906 2.28073L7.8224 5.00573C7.9724 5.21406 8.08073 5.40573 8.15573 5.58906C8.23073 5.76406 8.2724 5.93906 8.2724 6.0974C8.2724 6.2974 8.21406 6.49739 8.0974 6.68906C7.98906 6.88073 7.83073 7.08073 7.63073 7.28073L6.9974 7.93906C6.90573 8.03073 6.86406 8.13906 6.86406 8.27239C6.86406 8.33906 6.8724 8.39739 6.88906 8.46406C6.91406 8.53073 6.93906 8.58073 6.95573 8.63073C7.10573 8.90573 7.36406 9.26406 7.73073 9.69739C8.10573 10.1307 8.50573 10.5724 8.93906 11.0141C9.38906 11.4557 9.8224 11.8641 10.2641 12.2391C10.6974 12.6057 11.0557 12.8557 11.3391 13.0057C11.3807 13.0224 11.4307 13.0474 11.4891 13.0724C11.5557 13.0974 11.6224 13.1057 11.6974 13.1057C11.8391 13.1057 11.9474 13.0557 12.0391 12.9641L12.6724 12.3391C12.8807 12.1307 13.0807 11.9724 13.2724 11.8724C13.4641 11.7557 13.6557 11.6974 13.8641 11.6974C14.0224 11.6974 14.1891 11.7307 14.3724 11.8057C14.5557 11.8807 14.7474 11.9891 14.9557 12.1307L17.7141 14.0891C17.9307 14.2391 18.0807 14.4141 18.1724 14.6224C18.2557 14.8307 18.3057 15.0391 18.3057 15.2724Z"
+            stroke="black"
+            stroke-miterlimit="10"
+          />
+        </g>
+      </svg>
+    </span>
+    <span class="form-times input-icon hidden">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="12"
+        height="11"
+        viewBox="0 0 12 11"
+        fill="none"
+      >
+        <path d="M1 10.5L11 0.5" stroke="black" stroke-linecap="round" />
+        <path d="M11 10.5L1 0.5" stroke="black" stroke-linecap="round" />
+      </svg>
+    </span>
+  </div>
+  
+  <button class="buttons" type="submit">
+    <div class="buttons__icon">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+    <span class="buttons__val">Download</span>
+    <span class="buttons__hide">Download</span>
+    <div class="buttons__icon-right">
+      <img data-img="./files/img/icons/arrow.svg" alt="" />
+    </div>
+  </button>
+</form>
+
+
+      <div class="popup-tp__exit popup__close popup-test__exit">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="23"
+          height="23"
+          viewBox="0 0 23 23"
+          fill="none"
+        >
+          <line
+            x1="1.35355"
+            y1="0.859703"
+            x2="22.5668"
+            y2="22.0729"
+            stroke="black"
+          />
+          <line
+            x1="0.646447"
+            y1="21.8597"
+            x2="21.8596"
+            y2="0.6465"
+            stroke="black"
+          />
+        </svg>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+    <a href="{{ node.field_whatsapp_link.value }}" target="_blank"
+                            class="event_wp fixed-whatsapp"
+                            data-gtag-click="whatsapp" onclick="ym(11111111,'reachGoal','whatsapp icon')">
+                            <svg width="135" height="135" viewBox="0 0 135 135" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M67.5 135C104.779 135 135 104.779 135 67.5C135 30.2208 104.779 0 67.5 0C30.2208 0 0 30.2208 0 67.5C0 104.779 30.2208 135 67.5 135Z" fill="url(#paint0_linear_2059_3732)"></path>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M99.9835 35.86C91.9035 27.77 81.1434 23.31 69.6934 23.31C46.0934 23.31 26.8835 42.51 26.8735 66.11C26.8735 73.65 28.8434 81.02 32.5934 87.51L26.5234 109.69L49.2234 103.74C55.4734 107.15 62.5235 108.95 69.6835 108.95H69.7034C93.3034 108.95 112.513 89.75 112.523 66.14C112.513 54.7 108.063 43.95 99.9835 35.86ZM69.6835 101.72H69.6735C63.2835 101.72 57.0234 100 51.5634 96.76L50.2634 95.99L36.7935 99.52L40.3934 86.39L39.5435 85.04C35.9835 79.38 34.1035 72.83 34.1035 66.11C34.1135 46.49 50.0734 30.53 69.7134 30.53C79.2234 30.53 88.1535 34.24 94.8735 40.96C101.593 47.69 105.293 56.62 105.283 66.13C105.273 85.76 89.3035 101.72 69.6835 101.72ZM89.2134 75.07C88.1434 74.53 82.8834 71.95 81.9034 71.59C80.9234 71.23 80.2135 71.05 79.4935 72.13C78.7835 73.2 76.7335 75.61 76.1035 76.32C75.4835 77.03 74.8534 77.12 73.7834 76.59C72.7134 76.05 69.2635 74.93 65.1835 71.28C62.0035 68.44 59.8535 64.94 59.2335 63.87C58.6135 62.8 59.1634 62.22 59.7034 61.69C60.1834 61.21 60.7735 60.44 61.3035 59.82C61.8335 59.2 62.0135 58.75 62.3735 58.04C62.7335 57.33 62.5534 56.7 62.2834 56.17C62.0134 55.63 59.8735 50.37 58.9835 48.23C58.1135 46.14 57.2334 46.43 56.5734 46.39C55.9534 46.36 55.2334 46.35 54.5234 46.35C53.8134 46.35 52.6535 46.62 51.6735 47.69C50.6935 48.76 47.9335 51.35 47.9335 56.61C47.9335 61.87 51.7635 66.96 52.3035 67.67C52.8435 68.38 59.8434 79.19 70.5834 83.82C73.1334 84.92 75.1335 85.58 76.6835 86.07C79.2435 86.88 81.5835 86.77 83.4235 86.49C85.4835 86.18 89.7534 83.9 90.6434 81.4C91.5334 78.9 91.5334 76.76 91.2634 76.31C90.9934 75.87 90.2834 75.61 89.2134 75.07Z" fill="white"></path>
+<defs>
+<linearGradient id="paint0_linear_2059_3732" x1="67.505" y1="125.188" x2="67.505" y2="-9.8118" gradientUnits="userSpaceOnUse">
+<stop stop-color="#78CD51"></stop>
+<stop offset="1" stop-color="#A0FC84"></stop>
+</linearGradient>
+</defs>
+</svg>
+</a>
+
+    <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
+    <script src="./files/libs/DrawSVGPlugin.min.js"></script>
+    <script src="./js/app.min.js"></script>
+    <script
+      type="module"
+      src="https://fnst.axflare.com/landings/global-script/landings-global-script.js"
+    ></script>
+  </body>
+</html>
